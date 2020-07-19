@@ -1,3 +1,3 @@
-require '../himekuri2'
+require './himekuri.so'
 
 Himekuri.new.cal
