@@ -6,9 +6,25 @@ _RubyGemsに登録されているriceを使い、時刻表示するC++拡張機�
 
 #### 使い方
 
+_0.0.1_
+
 ```markdown
 require 'himekuri.o'
+```
 
+_0.0.2_
+
+```markdown
+require 'himekuri2'
+```
+or
+```markdown
+require 'himekuri.o'
+```
+
+_現在時刻表示インスタンス_
+
+```markdown
 Himekuri.new.cal
 ```
 
