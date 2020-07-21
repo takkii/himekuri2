@@ -8,7 +8,7 @@ require_relative File.join(File.dirname(__FILE__), '../lib/himekuri2/version.rb'
 # Mini_test file load.
 class VersionTest < Minitest::Test
   def test_version
-    assert_equal Himekuri2::VERSION, '0.0.1'
+    assert_equal Himekuri2::VERSION, '0.0.2'
   end
 end
 
