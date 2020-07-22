@@ -1,9 +1,4 @@
-#include <iostream>
-#include <ctime>
-#include <rice/Data_Type.hpp>
-#include <rice/Constructor.hpp>
-
-using namespace Rice;
+#include <all.h>
 
 class Himekuri {
 	public:
@@ -12,7 +7,7 @@ class Himekuri {
 			time_t now = std::time(nullptr);
 			const tm* nowlt = localtime(&now);
 			
-			std::stringstream s;
+                        stringstream s;
 			s<<"令和";
 			s<<nowlt->tm_year-118;
 			s<<"年";
@@ -27,9 +22,9 @@ class Himekuri {
 			s<<nowlt->tm_sec;
 			s<<"秒";
 
-			std::string result = s.str();
+                        string result = s.str();
 
-			std::cout << result << std::endl;
+                        cout << result << endl;
 	}
 };
 
