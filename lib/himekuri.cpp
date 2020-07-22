@@ -11,7 +11,8 @@ class Himekuri {
 		void cal() { 
 			time_t now = std::time(nullptr);
 			const tm* nowlt = localtime(&now);
-
+			
+			stringstream s;
 			s<<"令和";
 			s<<nowlt->tm_year-118;
 			s<<"年";
