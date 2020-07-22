@@ -76,6 +76,7 @@
 // rice extensions
 #include <rice/Data_Type.hpp>
 #include <rice/Constructor.hpp>
+using namespace Rice;
 
 // using namespace std::literals;
 using namespace std;

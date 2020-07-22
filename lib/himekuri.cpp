@@ -1,7 +1,5 @@
 #include <all.h>
 
-using namespace Rice;
-
 class Himekuri {
 	public:
 		Himekuri() {};
