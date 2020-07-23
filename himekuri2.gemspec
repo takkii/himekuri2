@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Rubyで使えるC++拡張機能です。現在時刻表示インスタンスを発生させます。}
   spec.license       = "MIT"
   spec.extensions    = "lib/extconf.rb"
-  spec.executables   = %w(himekuri)
+  spec.executables   = %w(himekuri himekuri2)
   spec.homepage      = "http://rubyist.hatenablog.com"
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
