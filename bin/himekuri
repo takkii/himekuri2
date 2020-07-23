@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# vim: filetype=ruby
+
+lib = File.expand_path('lib', __dir__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+begin
+require 'himekuri2'
+Himekuri.new.cal
+
+rescue Exception => e
+	# puts e.backtrace
+end
+
+Encoding.default_internal = 'UTF-8'
+
+GC.stress = true
+
+__END__
