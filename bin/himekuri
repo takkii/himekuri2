@@ -8,6 +8,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 begin
 require 'himekuri2'
+puts Himekuri.new.cal
 rescue Exception => e
 	# puts e.backtrace
 end
