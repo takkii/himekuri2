@@ -24,6 +24,24 @@ _or_
 require 'himekuri.o'
 ```
 
+#### インスタンス呼び出し
+
+```markdown
+Himekuri.new.cal
+```
+
+#### v0.0.1
+
+```markdown
+2020年7月19日14時19分47秒
+```
+
+#### v0.0.2 (GitHub head)
+
+```markdown
+令和2年7月23日6時42分8秒
+```
+
 _console (iTerm2)_
 
 ```markdown
@@ -37,21 +55,5 @@ _結果_
 ```
 
 _現在時刻表示インスタンス_
-
-```markdown
-Himekuri.new.cal
-```
-
-#### 端末上 v0.0.1
-
-```markdown
-2020年7月19日14時19分47秒
-```
-
-#### 端末上 v0.0.2 (GitHub head)
-
-```markdown
-令和2年7月23日6時42分8秒
-```
 
 ※ 現在時刻 : 令和2年7月23日6時42分8秒 バージョンは0.0.2です。
