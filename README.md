@@ -24,6 +24,18 @@ _or_
 require 'himekuri.o'
 ```
 
+_console (iTerm2)_
+
+```markdown
+himekuri
+```
+
+_結果_
+
+```markdown
+令和2年7月23日11時9分25秒
+```
+
 _現在時刻表示インスタンス_
 
 ```markdown
