@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    himekuri2 (0.0.2)
+    himekuri2 (0.0.3)
 
 GEM
   remote: https://rubygems.org/
