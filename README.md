@@ -9,7 +9,7 @@ _RubyGemsに登録されているriceを使い、時刻表示するC++拡張機�
 ```markdown
 gem install rice
 
-gem instal himekuri2
+gem install himekuri2
 ```
 
 ※ rubygems/riceを先に入れなければhimekuri2は入りません。
