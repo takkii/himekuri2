@@ -26,7 +26,7 @@ _0.0.2_
 require 'himekuri2'
 ```
 
-_0.0.3_
+_0.0.3, himekuri version info_
 
 ```markdown
 require 'himekuri2/version'
@@ -45,17 +45,19 @@ require 'himekuri.o'
 Himekuri.new.cal
 ```
 
-#### v0.0.1
+#### v0.0.1 (RubyGems)
 
 ```markdown
 2020年7月19日14時19分47秒
 ```
 
-#### v0.0.2 (GitHub head)
+#### v0.0.2 (RubyGems)
 
 ```markdown
 令和2年7月23日6時42分8秒
 ```
+
+#### v0.0.3 (GitHub head)
 
 _console (iTerm2)_
 
@@ -66,9 +68,9 @@ himekuri
 _結果_
 
 ```markdown
-令和2年7月23日11時9分25秒
+令和2年8月7日19時3分6秒
 ```
 
 _現在時刻表示インスタンス_
 
-※ 現在時刻 : 令和2年7月23日6時42分8秒 バージョンは0.0.2です。
+※ 現在時刻 : 令和2年8月7日19時3分33秒 日めくり2、バージョン : 0.0.3
