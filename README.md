@@ -26,6 +26,13 @@ _0.0.2_
 require 'himekuri2'
 ```
 
+_0.0.3_
+
+```markdown
+require 'himekuri2/version'
+puts Himekuri2::VERSION
+```
+
 _or_
 
 ```markdown
