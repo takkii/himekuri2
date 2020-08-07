@@ -1,4 +1,7 @@
-require_relative 'lib/himekuri2/version'
+# frozen_string_literal: true
+
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "himekuri2"
@@ -8,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{日めくり２です。呼び出すと現在時刻表示します}
   spec.description   = %q{Rubyで使えるC++拡張機能です。現在時刻表示インスタンスを発生させます。}
   spec.license       = "MIT"
-  spec.extensions    = "lib/extconf.rb"
+  spec.extensions    = "extconf.rb"
   spec.executables   = %w(himekuri)
   spec.homepage      = "http://rubyist.hatenablog.com"
   spec.files         = `git ls-files -z`.split("\x0")
