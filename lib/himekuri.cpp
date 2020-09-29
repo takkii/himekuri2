@@ -77,7 +77,6 @@ class Himekuri {
 			{
 				cerr << e.what();
 			}
-		}
 	}
 };
 
