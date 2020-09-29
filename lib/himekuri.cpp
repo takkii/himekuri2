@@ -72,7 +72,6 @@ class Himekuri {
 				cout << result_reiwa << comma << result_r << endl;
 				cout << himekuri << endl;
 
-				return 0;
 			}
 			catch (const exception& e)
 			{
