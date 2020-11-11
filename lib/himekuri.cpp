@@ -56,7 +56,7 @@ class Himekuri {
 				int uru_keisan = (reyear >> 2) - uru + (uru >> 2);
 				int keisan = (redays * 979 - 1033) >> 5;
 				int nichisu = (oneday + uru_keisan + keisan) / 365;
-				int redays_mini = 365 - nichisu + 21;
+				int redays_mini = 365 - nichisu + 25;
 
 				string tim = "時刻を表示";
 				string gantan = "来年の1月1日まであと";
