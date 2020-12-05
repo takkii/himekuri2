@@ -4,7 +4,7 @@
 
 _RubyGemsに登録されているriceを使い、時刻表示するC++拡張機能を作りました。動作には使い方を参照してください。ファイル内の用途では、更新記録を残すタイムスタンプなどで使えます。himekuriシェルを起動して、現在時刻を知ることもできます。※ Rubygemsに登録したhimekuriと同時(同じファイル内)に使うことはできません_
 
-#### 使い方
+#### 環境構築
 
 ```markdown
 gem install rice
@@ -12,4 +12,6 @@ gem install rice
 gem install himekuri2
 ```
 
-使い方、[himekuri2_wiki](https://github.com/takkii/himekuri2/wiki/himekuri2_wiki)を参照のこと。
+### 使い方
+
+[himekuri2_wiki](https://github.com/takkii/himekuri2/wiki/himekuri2_wiki)を参照のこと。
