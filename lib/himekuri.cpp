@@ -51,7 +51,6 @@ class Himekuri {
 				int redays = nowlt->tm_yday;
 				int redays_mini = 365-redays;
 				
-				// himekuri string
 				string tim = "時刻を表示";
 				string gantan = "来年の1月1日まであと";
 				string aisatu = " 日です";
