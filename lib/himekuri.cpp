@@ -51,11 +51,12 @@ class Himekuri {
 				int redays = nowlt->tm_yday;
 				int redays_mini = 365-redays;
 				
-				string tim = "時刻を表示:";
-				string gantan = "来年の1月1日まであと: ";
+				// himekuri string
+				string tim = "時刻を表示";
+				string gantan = "来年の1月1日まであと";
 				string aisatu = " 日です";
-				string number = "日めくり数え番号 : ";
-				string version = "1.0.0";
+				string number = "日めくり数え番号";
+				string week = "曜日";
 				
 				// week Sun ~ Sat
 				time_t timer;
