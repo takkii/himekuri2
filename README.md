@@ -11,3 +11,5 @@ gem install rice
 
 gem install himekuri2
 ```
+
+使い方、[himekuri2_wiki](https://github.com/takkii/himekuri2/wiki/himekuri2_wiki)を参照のこと。
