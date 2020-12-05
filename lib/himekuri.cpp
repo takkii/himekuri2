@@ -57,8 +57,6 @@ class Himekuri {
 				string number = "日めくり数え番号 : ";
 				string version = "1.0.0";
 				
-				string himekuri = number + version;
-				
 				// week Sun ~ Sat
 				time_t timer;
 				struct tm *t_st;
