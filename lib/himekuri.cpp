@@ -56,7 +56,6 @@ class Himekuri {
 				string aisatu = " 日です";
 				string number = "日めくり数え番号 : ";
 				string version = "1.0.0";
-				string comma = " : ";
 				
 				string himekuri = number + version;
 				
@@ -67,6 +66,9 @@ class Himekuri {
 				
 				time(&timer);
 				t_st = localtime(&timer);
+				
+				stringstream ss;
+				stringstream ssd;
 				
 				// version number
 				ss << 1;
