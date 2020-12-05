@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 # bundle exec
-require 'rubygems'
 require 'bundler'
 require 'rake'
 require 'rspec/core'
@@ -17,12 +16,24 @@ rescue Bundler::BundlerError => e
   exit e.status_code
 end
 
-# mini_test
+# rspec
 
-task :default => [:test]
-Rake::TestTask.new do |mini_test|
-  mini_test.test_files = Dir['mini_test/mini_test_*.rb']
-  mini_test.verbose = true
+RSpec::Core::RakeTask.new(:spec) do |spec|
+  spec.pattern = FileList['spec/**/*_spec.rb']
 end
 
+RSpec::Core::RakeTask.new(:rcov) do |spec|
+  spec.pattern = 'spec/**/*_spec.rb'
+  spec.rcov = true
+end
 
+task :default => :spec
+
+Rake::RDocTask.new do |rdoc|
+  version = File.exist?('VERSION') ? File.read('VERSION') : ""
+  rdoc.rdoc_dir = 'rdoc'
+  rdoc.title = "zinbeijett #{version}"
+  rdoc.rdoc_files.include('README*')
+  rdoc.rdoc_files.include('lib/**/*.rb')
+  rdoc.options = ["--charset", "utf-8", "--line-numbers"]
+end
