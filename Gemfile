@@ -6,5 +6,10 @@ gemspec
 gem "rake"
 gem "rspec"
 gem "rice"
-gem "minitest"
-gem "minitest-reporters"
+gem 'bundler'
+gem 'byebug'
+gem 'himekuri'
+gem 'himekuri_ts', git: 'https://github.com/takkii/himekuri_ts.git', branch: 'main' 
+gem 'pry'
+gem 'ruby-prof'
+gem 'solargraph'
