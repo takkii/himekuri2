@@ -8,7 +8,7 @@ GIT
 PATH
   remote: .
   specs:
-    himekuri2 (0.0.3)
+    himekuri2 (0.0.3.2)
 
 GEM
   remote: https://rubygems.org/
