@@ -38,7 +38,7 @@ class Himekuri {
 				z<<nowlt->tm_mon+1;
 				z<<"月";
 				z<<nowlt->tm_mday;
-				z<<"日：";
+				z<<"日" << " : ";
 				z<<nowlt->tm_hour;
 				z<<"時";
 				z<<nowlt->tm_min;
