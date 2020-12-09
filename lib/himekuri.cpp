@@ -70,7 +70,7 @@ public:
             
             // version number
             ss << 1;
-            ssd << 0;
+            ssd << 1;
             string str_num = ss.str();
             string str_dd = ssd.str();
             string comma = " : ";
