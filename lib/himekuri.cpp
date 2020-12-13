@@ -48,8 +48,11 @@ public:
             
             string result = z.str();
             
+            // OneYear → 365 days.
+            int OneYear_Days = 365;
+            
             int redays = nowlt->tm_yday;
-            int redays_mini = 365-redays;
+            int redays_mini = OneYear_Days - redays;
             
             string tim = "時刻を表示";
             string gantan = "来年の1月1日まであと";
