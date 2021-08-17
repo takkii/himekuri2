@@ -21,7 +21,6 @@
 #include <typeinfo>
 #include <exception>
 #include <initializer_list>
-// #include <cstdalign>
 #include <stdexcept>
 #include <cassert>
 #include <cerrno>
@@ -74,8 +73,7 @@
 #include <future>
 
 // rice extensions
-#include <rice/Data_Type.hpp>
-#include <rice/Constructor.hpp>
+#include <rice/rice.hpp>
 using namespace Rice;
 
 // using namespace std::literals;

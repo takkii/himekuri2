@@ -1,5 +1,6 @@
 #include <all.h>
 
+namespace Rice::detail {
 class Himekuri {
 public:
     Himekuri() {};
@@ -121,5 +122,6 @@ void Init_himekuri() {
     Data_Type<Himekuri> rb_cHimekuri = define_class<Himekuri>("Himekuri")
     .define_constructor(Constructor<Himekuri>())
     .define_method("cal", &Himekuri::cal);
-}
+    }
+  }
 }
