@@ -11,7 +11,7 @@ begin
   case host_os
   when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
     begin
-      exec("./himekuri.exe")
+      exec("himekuri.exe")
     rescue Exception => e
       puts e.backtrace
     end
