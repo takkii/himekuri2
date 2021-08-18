@@ -10,7 +10,7 @@ begin
   host_os = RbConfig::CONFIG['host_os']
   case host_os
   when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
-	begin
+    begin
       exec("#{File.dirname(__FILE__) + '/himekuri.exe'}")
     rescue Exception => e
       puts e.backtrace
