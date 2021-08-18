@@ -11,9 +11,11 @@ begin
   host_os = RbConfig::CONFIG['host_os']
   case host_os
   when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
-	himekuri_path = "#{File.dirname(__FILE__) + '/himekuri.exe'}".to_s
-    stdout_hi, stderr_hi, status_hi = Open3.capture3(himekuri_path)
-    puts stdout_hi
+	begin
+      exec("#{File.dirname(__FILE__) + '/himekuri.exe'}")
+    rescue Exception => e
+      puts e.backtrace
+    end
   when /darwin|mac os/
     require 'himekuri.o'
     Himekuri.new.cal
