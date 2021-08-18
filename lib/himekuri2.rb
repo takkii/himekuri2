@@ -3,6 +3,7 @@
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
+require 'open3'
 require 'rbconfig'
 require 'tanraku'
 
@@ -10,11 +11,9 @@ begin
   host_os = RbConfig::CONFIG['host_os']
   case host_os
   when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
-    begin
-      exec("himekuri.exe")
-    rescue Exception => e
-      puts e.backtrace
-    end
+	himekuri_path = "#{File.dirname(__FILE__) + '/himekuri.exe'}".to_s
+    stdout_hi, stderr_hi, status_hi = Open3.capture3(himekuri_path)
+    stdout_hi
   when /darwin|mac os/
     require 'himekuri.o'
     Himekuri.new.cal
