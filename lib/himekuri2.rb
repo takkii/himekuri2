@@ -13,7 +13,7 @@ begin
   when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
 	himekuri_path = "#{File.dirname(__FILE__) + '/himekuri.exe'}".to_s
     stdout_hi, stderr_hi, status_hi = Open3.capture3(himekuri_path)
-    stdout_hi
+    puts stdout_hi
   when /darwin|mac os/
     require 'himekuri.o'
     Himekuri.new.cal
