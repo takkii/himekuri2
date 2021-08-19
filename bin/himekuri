@@ -3,7 +3,24 @@
 
 # vim: filetype=ruby
 
+# Encoding Setting.
+Encoding.default_internal = 'UTF-8'
+Encoding.default_external = 'UTF-8'
+
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'himekuri2'
+# SubClass test function.
+class Himekuri2_instance
+  attr_reader :himekuri2_reader
+
+  def initialize
+    @himekuri2_reader = require 'himekuri2'
+  end
+
+  def remove
+    remove_instance_variable(:@himekuri2_reader)
+  end
+end
+
+Himekuri2_instance.new.remove
