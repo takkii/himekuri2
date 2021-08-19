@@ -10,7 +10,7 @@ Encoding.default_external = 'UTF-8'
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-# SubClass test function.
+# Class and method instance remove.
 class Himekuri2_instance
   attr_reader :himekuri2_reader
 
