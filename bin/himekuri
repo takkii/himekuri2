@@ -24,3 +24,5 @@ class Himekuri2_instance
 end
 
 Himekuri2_instance.new.remove
+
+__END__
