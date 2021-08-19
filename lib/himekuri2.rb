@@ -26,7 +26,7 @@ begin
     def version_raise
       puts Himekuri2::VERSION
     end
-    version_raise.tanraku
+    version_raise.tanraku_exit
   end
 rescue StandardError => e
   puts e.printStackTrace
