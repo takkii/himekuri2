@@ -1,3 +1,3 @@
 module Himekuri2
-  VERSION = "0.0.4.3.1"
+  VERSION = "0.0.4.4"
 end
