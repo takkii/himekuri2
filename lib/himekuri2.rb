@@ -11,7 +11,7 @@ begin
   case host_os
   when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
     begin
-      exec("#{File.dirname(__FILE__) + '/himekuri.exe'}")
+      exec("#{File.dirname(__FILE__) + '/himekuri2_win.exe'}")
     rescue Exception => e
       puts e.backtrace
     end
