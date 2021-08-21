@@ -25,14 +25,14 @@ class Himekuri2_instance
   end
 end
 
-v = /\Aversion|/\A-v\z/
+v = /\Aversion|\A-v\z/
 
 one = ARGV[0]
 
 if one.nil?
   Himekuri2_instance.new.remove
 elsif one.match?(v)
-  puts Himekuri2::VERSION
+  puts 'himekuri2 version : ' + Himekuri2::VERSION
 else
   puts 'Please choose an option.'
 end
