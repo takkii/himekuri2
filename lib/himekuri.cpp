@@ -78,7 +78,7 @@ public:
             
             // version number
             ss << 1;
-            ssd << 1;
+            ssd << 2;
             string str_num = ss.str();
             string str_dd = ssd.str();
             string comma = " : ";
@@ -113,12 +113,13 @@ public:
                 cout << "現在の C++ : C++98" << endl;
             else
                 cout << "現在の C++ : pre-standard C++" << endl;
-            
+
+        } catch (runtime_error& e) {
+          cout << "runtime error : " << e.what() << endl;
+        } catch (const exception& e) {
+          cout << "some exception : " << e.what() << endl;
         }
-        catch (const exception& e)
-        {
-            cerr << e.what();
-        }
+      exit(0);
     }
 };
 
