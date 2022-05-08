@@ -23,4 +23,5 @@ Gem::Specification.new do |spec|
 
   # 依存ライブラリ
   spec.add_runtime_dependency('rice', '~> 4.0')
+  spec.add_runtime_dependency('tanraku', '~> 1.0')
 end
